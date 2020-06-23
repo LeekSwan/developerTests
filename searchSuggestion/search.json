@@ -1,28 +1,81 @@
-{
-   "A": "Alfa",
-   "B": "Bravo",
-   "C": "Charlie",
-   "D": "Delta",
-   "E": "Echo",
-   "F": "Foxtrot",
-   "G": "Golf",
-   "H": "Hotel",
-   "I": "India",
-   "J": "Juliett",
-   "K": "Kilo",
-   "L": "Lima",
-   "M": "Mike",
-   "N": "November",
-   "O": "Oscar",
-   "P": "Papa",
-   "Q": "Quebec",
-   "R": "Romeo",
-   "S": "Sierra",
-   "T": "Tango",
-   "U": "Uniform",
-   "V": "Victor",
-   "W": "Whiskey",
-   "X": "X-ray",
-   "Y": "Yankee",
-   "Z": "Zulu"
-}
+[{
+   "type": "A",
+   "word": "Alfa"
+}, {
+   "type": "B",
+   "word": "Bravo"
+}, {
+   "type": "C",
+   "word": "Charlie"
+}, {
+   "type": "D",
+   "word": "Delta"
+}, {
+   "type": "E",
+   "word": "Echo"
+}, {
+   "type": "F",
+   "word": "Foxtrot"
+}, {
+   "type": "G",
+   "word": "Golf"
+}, {
+   "type": "H",
+   "word": "Hotel"
+}, {
+   "type": "I",
+   "word": "India"
+}, {
+   "type": "J",
+   "word": "Juliett"
+}, {
+   "type": "K",
+   "word": "Kilo"
+}, {
+   "type": "L",
+   "word": "Lima"
+}, {
+   "type": "M",
+   "word": "Mike"
+}, {
+   "type": "N",
+   "word": "November"
+}, {
+   "type": "O",
+   "word": "Oscar"
+}, {
+   "type": "P",
+   "word": "Papa"
+}, {
+   "type": "Q",
+   "word": "Quebec"
+}, {
+   "type": "R",
+   "word": "Romeo"
+}, {
+   "type": "S",
+   "word": "Sierra"
+}, {
+   "type": "T",
+   "word": "Tango"
+}, {
+   "type": "U",
+   "word": "Uniform"
+}, {
+   "type": "V",
+   "word": "Victor"
+}, {
+   "type": "W",
+   "word": "Whiskey"
+}, {
+   "type": "X",
+   "word": "X-ray"
+}, {
+   "type": "Y",
+   "word": "Yankee"
+}, {
+   "type": "Z",
+   "word": "Zulu"
+}, 
+   
+}]
