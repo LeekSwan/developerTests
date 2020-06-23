@@ -3,6 +3,8 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
       <title>Search Test</title>
       <style>
          body {
@@ -56,16 +58,24 @@
             padding-left: 18px;
             color: hsl(0, 0%, 40%);
          }
+
       </style>
    </head>
    <body>
       <div class="flex-col flex-center v100h v100w bg-grey">
          <div class="flex-col flex-center v50h v50w m-auto bg-white bdr-darkgrey">
+            <div class='printchatbox' id='printchatbox'></div>
             <div class="flex-row flex-center" id="demo">
-               <input class="custom-input" type="text" name="target" id="target" placeholder="Enter text for lookup..." />
+               
+               <input class="custom-input" type="text" id="target" placeholder="---Enter text for lookup..." />
+               <ul id="list"></ul>
+               
             </div>
          </div>
       </div>
-      <script type="text/javascript"></script>
+   
+
+       <script src="search.js"></script>
+
    </body>
 </html>
