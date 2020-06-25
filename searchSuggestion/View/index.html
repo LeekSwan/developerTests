@@ -58,21 +58,32 @@
             padding-left: 18px;
             color: hsl(0, 0%, 40%);
          }
-
+         ul {
+            
+            list-style: none;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            }
+         li {
+         color: #666;
+         height: 52px;
+         width: 80%;
+         border: 1px solid darkgray;
+         }
       </style>
    </head>
    <body>
       <div class="flex-col flex-center v100h v100w bg-grey">
          <div class="flex-col flex-center v50h v50w m-auto bg-white bdr-darkgrey">
-            <div class="flex-row flex-center" id="demo">
-               
+            <div class="flex-row flex-center" id="demo">  
                <input class="custom-input" type="text" id="target" placeholder="Enter text for lookup..." />
-               <ul id="list"></ul>
                
             </div>
+            <ul id="list" class="flex-center"></ul>
          </div>
       </div>
-   
+
 
        <script src="search.js"></script>
 
