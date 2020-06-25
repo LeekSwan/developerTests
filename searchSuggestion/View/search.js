@@ -13,7 +13,6 @@ $( document ).ready(function() {
       distance: 100,
       minMatchCharLength: 2,
       threshold: 0.5, 
-      includeMatches: true // This returns the index of matched characters but since we are working with objects, this may be diffucult to use for highlighting. 
     });
 
     // Reads input box text
@@ -29,24 +28,25 @@ $( document ).ready(function() {
         for (i = 0; i < Object.keys(result).length; i++) {
           word = result[i].item.word;
 
-          // // This would be what bolds the searched characters but i couldnt get it to quite work. 
-          // console.log(word.replace(/[char_input]/g, m => char_object(char_input)[m]));
+          // Wraps input characters in bold html  
+          strjoin = char_input.split('').join('|');
+          let boldword = word.replace(new RegExp(strjoin, 'g'), m => char_object(char_input)[m]);
 
-          let searchitem = '<li>' + result[i].item.word + '</li>'
-          resultdiv.append(searchitem);
+          // Wrap word in list and appends to html
+          resultdiv.append('<li>' + boldword + '</li>');
         }
     });
   });
 
-  // // Creates object for replace to iterate through
-  // function char_object(char_input) {
-  //   var char_array = {}
+  // Creates object for replace to iterate through
+  function char_object(char_input) {
+    var char_array = {}
 
-  //   for (i = 0; i < char_input.length; i++) {
-  //     char_array[char_input[i].toString()] = '<b>' + char_input[i] + '</b>';
-  //   }
-  //   return char_array
-  // }
+    for (i = 0; i < char_input.length; i++) {
+      char_array[char_input[i].toString()] = '<b>' + char_input[i] + '</b>';
+    }
+    return char_array
+  }
 
 });
 
