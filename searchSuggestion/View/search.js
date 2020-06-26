@@ -19,6 +19,8 @@ $( document ).ready(function() {
     $('#target').on('keyup', function () {
       char_input = $(this).val();
       let result = fuse.search(char_input); // Calls fuse on input characters
+      strjoin = char_input.split('').join('|'); 
+      char_obj = char_object(char_input);
 
       // Clears div so that it doesnt keep appending items.
       $("#list").empty();
@@ -26,11 +28,9 @@ $( document ).ready(function() {
       // Iterates through results and appends it to list
       let resultdiv = $('#list');
         for (i = 0; i < Object.keys(result).length; i++) {
-          word = result[i].item.word;
 
           // Wraps input characters in bold html  
-          strjoin = char_input.split('').join('|');
-          let boldword = word.replace(new RegExp(strjoin, 'g'), m => char_object(char_input)[m]);
+          let boldword = (result[i].item.word).replace(new RegExp(strjoin, 'g'), m => char_obj[m]);
 
           // Wrap word in list and appends to html
           resultdiv.append('<li>' + boldword + '</li>');
